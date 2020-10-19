@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Coursify</title>
+
+  <style>
+
+      .homehead{
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 700;
+    }
+    .subtitle{
+      font-size: 18px;
+      line-height: 22px;
+    }
+       .boxContainer{
+        width: 400px;
+        height: 42px;
+        border: 1px solid #000000;
+        padding: 0 10px;
+       
+    }
+    .elementContainer{
+        width: 100%;
+        height: 100%;
+        vertical-align: center;
+    }
+
+    .search{
+        border: none;
+        height: 100%;
+        width: 350px;
+        padding: 0 5px;
+    }
+
+  .button {
+      min-width: 124px;
+      margin-top: 10px;
+      /* width: 400px; */
+      background-color: #007bff; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      /* display: inline-block; */
+      font-size: 16px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+  }
+
+  .button1 {
+    color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+    border-radius: 20px;
+  }
+
+
+  .container{
+      margin-left: 1200px;
+      width:50%;
+      height: 100%;
+  }
+
+  #girl{
+  
+    position: relative;
+    width: 60%;
+    height: 70%;
+    vertical-align: middle;
+    border: none;
+    margin-left: 0;
+  
+  }
+
+  p{
+    font-family: poppins;
+    margin-left: 15px;
+
+  }
+
+  .counttext{
+    font-size: 32px;
+      line-height: 36px;
+  }
+
+  .headpoppins {
+      font-family: poppins;
+      font-style: normal;
+      font-weight: 700;
+  }
+
+
+    .countdesc {
+      font-size: 18px;
+      line-height: 22px;
+  }
+
+  .box{
+    width: 80%;
+    height:300px;
+    margin-left: 160px;
+    padding: 10px;
+    border: 1px solid gray;
+    column-count: auto;
+  
+  }
+
+  .data{
+    display: inline-flex;
+  }
+
+  .data img{
+    margin:0;
+    padding: 0;
+  }
+
+
+  td .data{
+    margin-left: 15px;
+
+  }
+  .data h4{
+    display: inline-flex;
+    min-width: 100px;
+  }
+
+  .btns{
+    display: inline-flex;
+    width:100%;
+    border-spacing: 13px;
+  
+  }
+
+  #one, #two, #three{
+    width: 33.33%;
+  
+
+    
+  }
+  #one{
+    float: left;
+    margin-left: 100px;
+  
+  }
+
+  #two{
+    margin-left: 70px;
+
+  }
+  #three{
+    margin-left: 70px;
+    float: right;
+    clear: none;
+  }
+
+  .btns button{
+    padding: 10px;
+    width:70%;
+    background-color: #007bff; /* Green */
+    border: none;
+    color: white;
+    box-shadow: 5px 10px 	#B0E0E6;
+    
+  }
+
+  .subject-box{
+    display:inline-flex;
+    width:100%;
+  }
+
+  .sci-box, .Comm-box{
+    width:350px;
+    height: 270px;
+    border:3px solid 	#87CEFA;
+    padding: 30px;
+    margin-left: 15px;
+    border-radius: 3%;
+    
+  }
+
+  .sub h3::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+  }
+
+  .sci-box .button
+
+  {
+    margin-top: 30px;
+  }
+
+  .cost-box{
+    display: inline-flex;
+    margin-top: 20px;
+  }
+  .cost-box h4{
+    margin-left: 0;
+    font-size: 30px;
+    color:#2F4F4F;
+  }
+  .cost-box h5{
+    margin-left: 2px;
+  }
+  .view{
+    display:inline-flex;
+    margin-top: 7px;
+  }
+
+  .view a{
+    font-size: 18px;
+    margin-left: 5;
+    color: blue;
+  }
+
+  .view img{
+    width: 22px;
+  
+    margin-left: 10px;
+  }
+
+  .items{
+    display: inline-flex;
+    
+  }
+  .items button{
+    margin-left: 160px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .button2 {
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+  
+  }
+  .items ebutton{
+    margin-left: 160px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+  }
+  .items ebutton button2{
+    width: 200px;
+  }
+
+  .test-group{
+    display: inline-flex;
+    margin-left: 40px;
+  }
+
+  .test-group .tes{
+    width:450px;
+    height: 250px;
+    border:1px solid #000000;
+    border-radius: 3px;
+    margin: 30px;
+  }
+
+  .test-group img{
+    border-radius: 50%;
+    height: 120px;
+    width:100px;
+    margin:10px;
+
+  }
+
+  .tes{
+    display: inline-flex;
+  }
+
+  .tes .content{
+    margin-top: 10px;
+  }
+
+  .button3{
+  margin-left: 640px;
+  }
+
+  @media only screen and (max-width:510px){
+
+    
+    .items{
+      flex-direction: column;
+    }
+
+    .items button{
+      margin-left: 90px;
+    }
+
+    .subject-box{
+      flex-direction: column;
+      margin-bottom: -35px;
+    }
+
+    .sci-box{
+      margin-bottom: 10px;
+    }
+
+    .sci-box:last-child{
+      margin-bottom:50px;
+    }
+
+    .test-group{
+      flex-direction: column;
+   }
+
+    .test-group:first-child{
+      margin-left: 10px;
+    }
+
+    .test-group .tes{
+      margin-left:-46px;
+    }
+  }
+
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 ml-4">
+            <a  class="navbar-brand dropdown-toggle ml-2" href="#" id="navbarDropdown"type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="logo.png" width="30px" height="35px"  loading="lazy">Coursify
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Class 6</a>
+                <a class="dropdown-item" href="#">Class 7</a>
+                <a class="dropdown-item" href="#">Class 8</a>
+                <a class="dropdown-item" href="#">Class 9</a>
+                <a class="dropdown-item" href="#">Class 10</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Choose your Language</a>
+            </div>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-4">
+            <li class="nav-item active mr-2">
+              <a class="nav-link" href="#">Boards <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item active mr-2">
+                <a class="nav-link" href="#">Books <span class="sr-only">(current)</span></a>
+              </li>
+          
+              <li class="nav-item active mr-2">
+                <a class="nav-link" href="#">Exams <span class="sr-only">(current)</span></a>
+              </li>
+
+            <li class="nav-item active mr-2">
+                <a class="nav-link" href="#">Why Us? <span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+            <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Sign Up</button>
+        </div>
+      </nav>
+
+      <div class="head row py-2 px-md-5 px-3">
+        <div class="part1 col-lg-6 col-12">
+          <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif" class="homehead mt-4">Every Student matters</h1>
+          <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="subtitle mt-2">Get your doubts clarified and attend LIVE classes <br> the language of your choice</p>   
+      
+        <div class="boxContainer">
+            <table class="elementsContainer">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Search your doubt here" class="search mt-2 mb-2">
+                    </td>
+
+                    <td>
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="button button1" id="el1">Get the free app on Play Store</button>
+  </div>
+    
+   <div class="part2 col-lg-6 col-12 mb-4">
+    <div class="row py-3">
+        <img src="image1.jpg" id="girl" class="rounded float-right my-2 mr-4"></div>
+        <div class="row">
+          <div class="col-md-4 col-6 d-flex align-items-center nopadding">
+              <img src="video.svg" style="width:20%;" class="img-fluid widthsmiley"/>
+              <div>
+                  <p class="headpoppins mb-0 counttext">10,00,000+</p>
+                  <p class="countdesc mb-0">video lectures</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-6 d-flex align-items-center nopadding">
+              <div class="px-md-2">
+                <img src="smiley.svg" class="img-fluid widthsmiley"/>
+              </div>
+              <div>
+                  <p class="headpoppins mb-0 counttext">40,000+</p>
+                  <p class="countdesc mb-0">satisfied students</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+     <div class="row">
+       
+        <div class="card col-auto" style="width: 18rem; margin-left:3.5rem; margin-right: 3rem;">
+            <img src="live.jpg" style="height: 11rem;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LIVE CLASSES</h5>
+              <p class="card-text">Learn live from the best experienced tutors in India.</p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card col-auto" style="width: 18rem; margin-left: 0.5rem; margin-right: 2rem;">
+            <img src="ans.jpg"style="height: 11rem;" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">EARN CASH</h5>
+              <p class="card-text">Ask Doubts Answer Questions Earn Money.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+        </div>
+
+        <div class="card col-auto" style="width: 18rem; margin-left:0.5rem; margin-right: 2rem;">
+            <img src="preparation.jpg" style="height: 11rem;"class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">EXAM PREPARATION</h5>
+              <p class="card-text">Preparation for JEE Mains, JEE Advanced NEET.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+        </div>
+
+        <div class="card col-auto" style="width: 18rem; margin-left:0.5rem; margin-right: 2rem;">
+            <img src="jee.jpg" style="height: 11rem;" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">SAMPLE TESTS</h5>
+              <p class="card-text">Tests with detailed analysis national ranking.</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+        </div>
+
+    </div>
+   
+ 
+
+  <div class="study px-3">
+    <h2 class="ml-4 mt-4 mb-2">Study Materials of 50+ State Boards</h2>
+    <div class="box">
+        <table style="margin-top:10px" class="table table-borderless">
+      <tbody>
+        <tr>
+          <td>
+            
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+         <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h5>Andhra Pradesh</h4>
+          </div>
+        </td>
+        </tr>
+
+        
+        <tr>
+          <td>
+            
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+         <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h5>Andhra Pradesh</h4>
+          </div>
+        </td>
+        </tr>
+
+        
+        <tr>
+          <td>
+            
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+         <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h5>Andhra Pradesh</h4>
+          </div>
+        </td>
+        </tr>
+
+        
+        <tr>
+          <td>
+            
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+        <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h4>Andhra Pradesh</h4>
+          </div>
+        </td>
+
+         <td>
+          <div class="data">
+            <img src="video.svg" style="height: 2rem;">
+            <h5>Andhra Pradesh</h4>
+          </div>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="exams px-3">
+    <h2 class="ml-4 mt-4 mb-2">Exams that you can ace with Coursify</h2>
+    <div class="items">
+    <button class="ebutton button2" style="width: 18rem;">Board Exams</button>
+        <button class="ebutton button2" style="width: 18rem;">JEE Mains and Advanced</button>
+        <button class="ebutton button2" style="width: 18rem;">NEET</button>
+      </div>
+
+  <div class="sub px-3">
+    <h2 class="ml-4 mt-4 mb-2">Explore our subjects</h2>
+
+    <div class="row2 mt-4">
+      <div class="subject2 btn">
+        <div class="subject-box">
+          <div class="sci-box">
+        <div id="sci">
+          <h3>Maths</h3>
+          <div class="cost-box">
+            <h4>&#x20B9;20,000</h4>
+            <h5 class="ml-0">Cost per class:</h5>
+            <h4>&#x20B9;200</h4>
+          </div>
+          
+          <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+          <div class="view">
+            <a href="#">View Full Course</a>
+            <img src="arrow.svg">
+        </div>
+      </div> 
+    </div> 
+      
+        <div class="sci-box">
+          <div id="Comm">
+          <h3>Physics</h3>
+          <div class="cost-box">
+            <h4>&#x20B9;20,000</h4>
+            <h5 class="ml-0">Cost per class:</h5>
+            <h4>&#x20B9;200</h4>
+
+          </div>
+          <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+          <div class="view">
+            <a href="#">View Full Course</a>
+            <img src="arrow.svg">
+        </div>
+        </div>
+        </div>
+       
+        <div class="sci-box">
+        <div id="coding">
+          <h3>Chemistry</h3>
+          <div class="cost-box">
+            <h4>&#x20B9;20,000</h4>
+            <h5>Cost per class:</h5>
+            <h4>&#x20B9;200</h4>
+
+          </div>
+          
+          <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+          <div class="view">
+            <a href="#">View Full Course</a>
+            <img src="arrow.svg">
+        </div>
+        </div>
+      </div>
+         
+      
+      <div class="sci-box">
+
+    <div id="lang">
+        <h3>Biology</h3>
+        <div class="cost-box">
+          <h4>&#x20B9;20,000</h4>
+          <h5>Cost per class:</h5>
+          <h4>&#x20B9;200</h4>
+
+        </div>
+        <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+        <div class="view">
+          <a href="#">View Full Course</a>
+          <img src="arrow.svg">
+      </div>
+      </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+    
+
+    <div class="row2 mt-4">
+      <div class="subject2 btn">
+        <div class="subject-box">
+          <div class="sci-box">
+        <div id="sci">
+          <h3>Science</h3>
+          <div class="cost-box">
+            <h4>&#x20B9;20,000</h4>
+            <h5>Cost per class:</h5>
+            <h4>&#x20B9;200</h4>
+
+          </div>
+          <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+          <div class="view">
+            <a href="#">View Full Course</a>
+            <img src="arrow.svg">
+        </div>
+        </div> 
+        </div> 
+      
+        <div class="sci-box">
+          <div id="Comm">
+          <h3>Commerce</h3>
+          <div class="cost-box">
+            <h4>&#x20B9;20,000</h4>
+            <h5>Cost per class:</h5>
+            <h4>&#x20B9;200</h4>
+
+          </div>
+          <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+          <div class="view">
+            <a href="#">View Full Course</a>
+            <img src="arrow.svg">
+        </div>
+        </div>
+        </div>
+       
+        <div class="sci-box">
+        <div id="coding">
+          <h3>Coding</h3>
+          <div class="cost-box">
+            <h4>&#x20B9;20,000</h4>
+            <h5>Cost per class:</h5>
+            <h4>&#x20B9;200</h4>
+
+          </div>
+          <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+          <div class="view">
+            <a href="#">View Full Course</a>
+            <img src="arrow.svg">
+        </div>
+        </div>
+      </div>
+         
+      
+      <div class="sci-box">
+
+    <div id="lang">
+        <h3>Languages</h3>
+        <div class="cost-box">
+          <h4>&#x20B9;20,000</h4>
+          <h5>Cost per class:</h5>
+          <h4>&#x20B9;200</h4>
+
+        </div>
+        <button class="btn btn-outline-primary my-2 my-sm-0 mr-4" type="submit">Enroll Now</button>
+        <div class="view">
+          <a href="#">View Full Course</a>
+          <img src="arrow.svg">
+      </div>
+      </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="sol px-3">
+      <h2 class="ml-4 mt-4 mb-2">Free Solutions</h2>
+      <div class="items">
+        <button class="button button2">NCERT Solutions</button>
+        <button class="button button2">NCERT Exemplar</button>
+        <button class="button button2">Reference Books</button>
+        <button class="button button2">Exam Prep Material</button>
+
+      </div>
+    </div>
+
+    <div class="testimonials px-3">
+      <h2 class="ml-4 mt-4 mb-2">Testimonials</h2>
+      <div class="test-group">
+        <div class="tes" style="margin-left: -50px;">
+          <div class="image">
+            <img src="p1.jpg">
+          </div>
+          <div class="content">
+            <p class="countdesc ptcontent">"Coursify has made my daughter passionate about Science. She now sees Science in everything around her! It’s brilliant!"</p>
+                                <p class="testparentname textbold mt-3">Kunal Tehlan</p>
+                                <p class="testparentname">Father of Chhavi, Class 7</p>
+          </div>
+
+        </div>
+        <div class="tes">
+          <div class="image">
+            <img src="p2.jpg">
+          </div>
+          <div class="content">
+           <p class="countdesc ptcontent"> “Akshay hated science class in school. Now thanks to his biology teacher, he not only loves studying the subject but is also inspired to become a doctor.Thank you Coursify!”</p>
+            <p class="testparentname textbold mt-3">Preeti Agarwal</p>
+            <p class="testparentname">Mother of Akshay, Class 8</p>
+                            
+          </div>
+          
+        </div>
+        <div class="tes">
+          <div class="image">
+            <img src="p3.jpg">
+          </div>
+          <div class="content">
+            <p class="countdesc ptcontent">“I knew my daughter had a knack for Mathematics.Coursify brought it out in her through creative teaching and carefully thought-out activities!”</p>
+            <p class="testparentname textbold mt-3">Hiren Dedhia</p>
+            <p class="testparentname">Father of Tarushi, Class 6</p>
+          </div>
+          </div>
+          
+        </div>
+      
+      </div>
+
+    </div>
+
+    
+    <button class="button button3">Download the app for free</button>
+  
+
+
+    
+       
+        
+
+
+
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
